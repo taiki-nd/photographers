@@ -8,7 +8,29 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  <header>
+    <div class="heading">
+      <h1 class="title">Photographers</h1>
+    </div>
 
+    <nav id="nav_bar">
+      <ul class="navi_list">  
+        <li class="navi"><a href="#section1">top</a></li>
+        <li class="navi"><a href="#section2">みんなの写真</a></li>
+        <li class="navi"><a href="#section3">人気機材</a></li>
+        <li class="navi"><a href="#section4">機材インプレ速報</a></li>
+        <li class="navi"><a href="#section4">運営からのお知らせ</a></li>
+      </ul>
+    </nav>
+
+    <div class="toggle_btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div id="mask"></div>
+  </header>
   <body>
     <%= yield %>
   </body>

@@ -1,0 +1,12 @@
+<section class="main_grid">
+    <% @posts.each do |post| %>
+        <div class="post">
+            <div class="post_img">
+                <img class="posted_img" src="<%= post.image %>">
+            </div>
+            <p><%= post.name %></p>
+            <p><%= post.camera %></p>
+            <p><%= post.lens %></p>
+        </div>
+    <% end %>
+</section>

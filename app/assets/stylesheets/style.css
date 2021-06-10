@@ -1,11 +1,23 @@
 @charset "UTF-8";
 
-/*----------header----------*/
+img{
+    max-width: 100%;
+}
+
+/*-----------------------------------------
+------------header
+-----------------------------------------*/
+
 
 .heading{
     width: 50%;
     height: 60px;
     margin-left: 30px;
+}
+
+#header a{
+    text-decoration: none;
+    color: #fff;
 }
 
 #nav_bar{
@@ -32,17 +44,17 @@
     font-size: 1.5rem;
 }
 
-.nav_sns{
-    width: 150px;
-    margin: 80px 40px;
-    font-size: 1.2rem;
-}
-
 .navi{
     display: block;
     width: 250px;
     border-bottom: 1px solid #fff;
     margin: 10px;
+    color: #fff;
+}
+
+.navi_log{
+    font-size: 1.2rem;
+    margin-top: 100px
 }
 
 /*----------------------------------------*/
@@ -116,3 +128,30 @@
     background-color: #333;
     cursor: pointer;
 }
+
+/*-----------------------------------------
+------------section1
+-----------------------------------------*/
+
+.grid{
+    margin-top: 20px;
+    gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.post img{
+    vertical-align: top;
+}
+
+.post{
+    transition: all 0.5s ease;
+    box-shadow: 0 0 8px 4px #444444;
+}
+
+.post_p{
+    text-align: left;
+    display: block;
+    margin: 0 auto;
+}
+

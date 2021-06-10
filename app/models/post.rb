@@ -1,7 +1,5 @@
 class Post < ApplicationRecord
-    with_options presence: true do
-        validates :image
-      　validates :camera
-      　validates :lensgit
-    end
+    validates :image, presence: true
+    validates :camera, presence: true
+    validates :lens, presence: true
 end

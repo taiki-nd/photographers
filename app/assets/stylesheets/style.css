@@ -214,3 +214,10 @@ form input[type="submit"]:hover {
 .success h3 {
   margin: 10px auto;
 }
+
+.btn{
+    display: block;
+    border: 1px solid #212121;
+    border-radius: 5px;
+    padding: 20px
+}

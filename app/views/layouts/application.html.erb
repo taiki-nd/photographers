@@ -9,37 +9,42 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   
-  <header id="header">
-    <div class="heading">
-      <h1 class="title">Photographers</h1>
-    </div>
-
-    <nav id="nav_bar">
-      <ul class="navi_list">  
-        <li class="navi"><a href="#section1">top</a></li>
-        <li class="navi"><a href="#section2">みんなの写真</a></li>
-        <li class="navi"><a href="#section3">人気機材</a></li>
-        <li class="navi"><a href="#section4">機材インプレ速報</a></li>
-        <li class="navi"><a href="#section5">運営からのお知らせ</a></li>
-      </ul>
-      <ul class="navi_log">
-        <li class="navi">ログイン</li>
-        <li class="navi"><a href="/posts/new">投稿する</a></li>
-      </ul>
-    </nav>
-
-    <div class="toggle_btn">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-    <div id="mask"></div>
-  </header>
   <body>
+    <header id="header">
+      
+      <div class="heading">
+        <h1 class="title">Photographers</h1>
+      </div>
+  
+      <nav id="nav_bar">
+        <ul class="navi_list">  
+          <li class="navi"><a href="#section1">top</a></li>
+          <li class="navi"><a href="#section2">みんなの写真</a></li>
+          <li class="navi"><a href="#section3">人気機材</a></li>
+          <li class="navi"><a href="#section4">機材インプレ速報</a></li>
+          <li class="navi"><a href="#section5">運営からのお知らせ</a></li>
+        </ul>
+        <ul class="navi_log">
+          <li class="navi">ログイン</li>
+          <li class="navi"><a href="/posts/new">投稿する</a></li>
+        </ul>
+      </nav>
+  
+      <div class="toggle_btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+  
+      <div id="mask"></div>
+  　</header>
+  
     <%= yield %>
-  </body>
+    
   <footer>
     <p>copy right photographers allright reserved</p>
-  </footer>
+  </footer>  
+  
+  </body>
+  
 </html>
